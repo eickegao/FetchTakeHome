@@ -22,10 +22,10 @@ struct RecipeCard: View {
             
             HStack(alignment: .center, spacing: 12) {
                 VStack(alignment: .leading, spacing: 4) {
-                    Text(recipe.name)
+                    Text(recipe.name ?? "Unknown")
                         .foregroundColor(.primary)
                     
-                    Text(recipe.cuisine)
+                    Text(recipe.cuisine ?? "Unknown")
                         .foregroundColor(.secondary)
                 }
                 

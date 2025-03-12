@@ -12,8 +12,8 @@ struct RecipeResponse: Codable {
 }
 
 struct Recipe: Codable, Identifiable {
-    let cuisine: String
-    let name: String
+    let cuisine: String?
+    let name: String?
     let photoUrlLarge: String?
     let photoUrlSmall: String?
     let id: String
